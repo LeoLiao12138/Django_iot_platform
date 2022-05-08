@@ -1,3 +1,8 @@
 <p>hello world</p>
-<p>{{topic}}</p>
-<p>{{payload}}</p>
+<p>
+  {% for message in messages %}
+    <p>{{message.id}}</p>
+    <p>{{message.topic}}</p>
+    <p>{{message.payload}}</p>
+
+  {% endfor %}
